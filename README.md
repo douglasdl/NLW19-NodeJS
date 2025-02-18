@@ -1,6 +1,6 @@
 # NLW19-NodeJS
 
-
+- [NLW Documents](https://efficient-sloth-d85.notion.site/NLW-Connect-337b47bcef1640fc9a536f66dd45d8f1)
 - [NodeJS](https://nodejs.org/en)
 - [NPM](https://docs.npmjs.com/)
 - [NVM](https://github.com/nvm-sh/nvm)
@@ -9,6 +9,7 @@
   - [Omni Theme](https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni)
   - [Symbols](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols)
   - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+  - [Biome](https://marketplace.visualstudio.com/items?itemName=biomejs.biome)
 
 - Databases
   - [Redis](https://redis.io/)
@@ -36,6 +37,7 @@ docker stop redis
 - Middlewares
   - CORS
 - [Zod](https://zod.dev/)
+- [Biome](https://biomejs.dev/)
 
 Create the Project:
 ```sh
@@ -50,6 +52,7 @@ npm i @fastify/cors
 npm i zod
 npm i fastify-type-provider-zod
 npm i @fastify/swagger @fastify/swagger-ui
+npm i @biomejs/biome -D
 ```
 
 - [tsconfig - bases](https://github.com/tsconfig/bases)
