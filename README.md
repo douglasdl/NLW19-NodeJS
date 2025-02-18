@@ -8,6 +8,7 @@
   VS Code Extensions:
   - [Omni Theme](https://marketplace.visualstudio.com/items?itemName=rocketseat.theme-omni)
   - [Symbols](https://marketplace.visualstudio.com/items?itemName=miguelsolorio.symbols)
+  - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
 - Databases
   - [Redis](https://redis.io/)
@@ -29,4 +30,35 @@ docker run redis
 docker run -d redis
 docker start redis
 docker stop redis
+```
+
+- [Fastify](https://fastify.dev/)
+- Middlewares
+  - CORS
+- [Zod](https://zod.dev/)
+
+Create the Project:
+```sh
+npm init -y
+```
+
+Install the dependencies:
+```sh
+npm i fastify
+npm i tsx typescript @types/node -D
+npm i @fastify/cors
+npm i zod
+npm i fastify-type-provider-zod
+npm i @fastify/swagger @fastify/swagger-ui
+```
+
+- [tsconfig - bases](https://github.com/tsconfig/bases)
+Create the "tsconfig.json":
+```sh
+npx tsc --init
+```
+
+Run the server.ts:
+```sh
+npx tsx src/server.ts
 ```
