@@ -18,6 +18,8 @@
 - [Docker](https://docs.docker.com/)
 - [Docker Installation](https://efficient-sloth-d85.notion.site/NLW-Connect-337b47bcef1640fc9a536f66dd45d8f1)
 - [Docker Hub](https://hub.docker.com/)
+  - [PosgreSQL image](https://hub.docker.com/r/bitnami/postgresql)
+  - [Redis image](https://hub.docker.com/r/bitnami/redis)
 - [Hello World - Docker Image](https://hub.docker.com/_/hello-world)
 
 Main Docker commands:
@@ -53,6 +55,9 @@ npm i zod
 npm i fastify-type-provider-zod
 npm i @fastify/swagger @fastify/swagger-ui
 npm i @biomejs/biome -D
+npm i ioredis
+npm i postgres drizzle-orm
+npm i drizzle-kit -D
 ```
 
 - [tsconfig - bases](https://github.com/tsconfig/bases)
@@ -64,4 +69,27 @@ npx tsc --init
 Run the server.ts:
 ```sh
 npx tsx src/server.ts
+```
+
+Download the DOcker images:
+```sh
+docker pull bitnami/postgresql
+docker pull bitnami/redis
+```
+
+
+Run the Docker Compose:
+```sh
+docker compose up -d
+```
+
+Check if the containers are running
+```sh
+docker ps
+```
+
+Check the container logs informing the container id:
+```sh
+docker logs 3d992806efe4
+docker logs c55e08bbd9a4
 ```
