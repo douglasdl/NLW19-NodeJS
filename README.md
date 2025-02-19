@@ -71,7 +71,7 @@ Run the server.ts:
 npx tsx src/server.ts
 ```
 
-Download the DOcker images:
+Download the Docker images:
 ```sh
 docker pull bitnami/postgresql
 docker pull bitnami/redis
@@ -92,4 +92,10 @@ Check the container logs informing the container id:
 ```sh
 docker logs 3d992806efe4
 docker logs c55e08bbd9a4
+```
+
+Create the SQL files and Generate the Drizzle migrations:
+```sh
+npx drizzle-kit generate
+npx drizzle-kit migrate
 ```
