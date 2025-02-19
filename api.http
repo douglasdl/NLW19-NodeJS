@@ -5,3 +5,7 @@ Content-Type: application/json
   "name": "Douglas Dias Leal",
   "email": "douglas_san@hotmail.com"
 }
+
+###
+
+GET http://localhost:3333/invites/douglas123
