@@ -5,5 +5,8 @@
   },
   "editor.codeActionsOnSave": {
     "source.organizeImports.biome": "explicit"
-  }
+  },
+  "explorer.compactFolders": false,
+  "editor.indentSize": 2,
+  "editor.tabSize": 2
 }
