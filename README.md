@@ -58,6 +58,7 @@ npm i @biomejs/biome -D
 npm i ioredis
 npm i postgres drizzle-orm
 npm i drizzle-kit -D
+npm i tsup -D
 ```
 
 - [tsconfig - bases](https://github.com/tsconfig/bases)
@@ -99,3 +100,9 @@ Create the SQL files and Generate the Drizzle migrations:
 npx drizzle-kit generate
 npx drizzle-kit migrate
 ```
+
+## Hostages
+
+- [Neon](https://neon.tech): Postgres
+- [Upstash](https://upstash.com/): Redis
+- [Render](https://render.com/docs/deploy-node-express-app): Node.js
