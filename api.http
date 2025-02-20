@@ -3,15 +3,30 @@ Content-Type: application/json
 
 {
   "name": "Douglas Dias Leal",
-  "email": "douglas_san@hotmail.com"
+  "email": "douglas@email.com"
 }
 
 ###
 
-GET http://localhost:3333/invites/douglas123
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+  "name": "Usuário indicado",
+  "email": "indicado@email.com",
+  "referrer": "2e3e4fcc-7deb-4153-8d9b-005a850cdb27"
+}
 
 ###
 
-GET http://localhost:3333/subscribers/douglas123/ranking/clicks
+GET http://localhost:3333/invites/2e3e4fcc-7deb-4153-8d9b-005a850cdb27
+
+###
+
+GET http://localhost:3333/subscribers/2e3e4fcc-7deb-4153-8d9b-005a850cdb27/ranking/clicks
+
+###
+
+GET http://localhost:3333/subscribers/2e3e4fcc-7deb-4153-8d9b-005a850cdb27/ranking/count
 
 ###
